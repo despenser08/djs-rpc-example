@@ -11,6 +11,10 @@ const {
 const RPC = new Client({ transport: "ipc" });
 
 RPC.on("ready", () => {
+  console.log(
+    `Found ${RPC.user.username}#${RPC.user.discriminator} (${RPC.user.id})`
+  );
+
   const startTimestamp = new Date();
 
   let options = {
@@ -23,7 +27,7 @@ RPC.on("ready", () => {
 
   if (timestamp) options.startTimestamp = startTimestamp;
 
-  RPC.setActivity(options);
+  RPC.setActivity(options).then(() => console.log("RPC Changed"));
 });
 
 RPC.login({ clientId });

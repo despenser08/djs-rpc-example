@@ -1,0 +1,29 @@
+{
+  "name": "djs-rpc-example",
+  "version": "0.0.1",
+  "description": "Just an example for RPC Activity",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/despenser08/djs-rpc-example.git"
+  },
+  "keywords": [
+    "discord.js",
+    "rpc",
+    "presence",
+    "djs",
+    "example"
+  ],
+  "author": "despenser08",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/despenser08/djs-rpc-example/issues"
+  },
+  "homepage": "https://github.com/despenser08/djs-rpc-example#readme",
+  "dependencies": {
+    "discord-rpc": "^3.2.0"
+  }
+}
